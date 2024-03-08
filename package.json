@@ -1,0 +1,32 @@
+{
+  "name": "openapi-admin-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon app.js",
+    "dev:prod": "NODE_ENV=production nodemon app.js",
+    "start": "pm2 start ecosystem.config.js --env production"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.4.1",
+    "axios": "^1.2.6",
+    "bcrypt": "^5.1.0",
+    "crypto-js": "^4.1.1",
+    "ioredis": "^5.2.4",
+    "koa": "^2.15.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^12.0.0",
+    "koa-session": "^6.2.0",
+    "mongoose": "^8.2.1",
+    "mysql2": "^2.3.3",
+    "node-schedule": "^2.1.0",
+    "nodemailer": "^6.9.4",
+    "nodemon": "^2.0.19",
+    "request-ip": "^3.3.0",
+    "sequelize": "^6.25.3",
+    "viem": "^2.7.12",
+    "ws": "^8.16.0"
+  }
+}
